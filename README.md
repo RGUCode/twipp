@@ -5,7 +5,7 @@ Ok I wrote this quickly for you guys as I couldn't find one easy enough for you 
 
 It's pretty simple, first download and unzip the package (or git clone)
 
-Then open config.php and add the keys from your twitter app (create an app at apps.twitter.com)
+Then open config.php and add the keys from your twitter app (create an app at apps.twitter.com) now upload everything to the root of your azure server (i.e commit through phpstorm)
 
 The proxy provides 5 functions all return JSON - no cors issues. All the responces are exactly the same as those documented in the twitter API.
 I've tried to include all the functions I think you guys will need.
