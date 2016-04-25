@@ -14,7 +14,7 @@ I've tried to include all the functions I think you guys will need.
 User Searching -
 takes two parameters name and count eg
 
-http://<your-server>/twipp/user_search.php?name=RGU&count=100
+http://<<your-server>>/twipp/user_search.php?name=RGU&count=100
 
 will return up to 100 users that look a bit like (contain RGU) RGU
 
