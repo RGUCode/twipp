@@ -4,20 +4,14 @@ require_once('twitter_proxy.php');
 require_once('config.php');
 
 // defaults
-$user_id = '14812487';
-$screen_name = 'wildfireone';
-$count = 5;
+$id = 719870230982500400;
 
-if(isset($_GET['count'])){
-	$count = $_GET['count'];
-}
-if(isset($_GET['name'])){
-	$screen_name = $_GET['name'];
+if(isset($_GET['id'])){
+	$id = $_GET['id'];
 }
 
-$twitter_url = '1.1/statuses/user_timeline.json';
-$twitter_url .= '?screen_name=' . $screen_name;
-$twitter_url .= '&count=' . $count;
+$twitter_url = '1/statuses/oembed.json';
+$twitter_url .= '?url=https://twitter.com/Interior/status/' . $id;
 
 // Create a Twitter Proxy object from our twitter_proxy.php class
 $twitter_proxy = new TwitterProxy(
@@ -28,7 +22,7 @@ $twitter_proxy = new TwitterProxy(
 );
 
 // Invoke the get method to retrieve results via a cURL request
-$tweets = $twitter_proxy->get($twitter_url);
-echo $tweets;
+$tweet = $twitter_proxy->get($twitter_url);
+echo $tweet;
 
 ?>

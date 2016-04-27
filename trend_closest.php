@@ -15,7 +15,7 @@ if(isset($_GET['lng'])){
 	$long = $_GET['lng'];
 }
 
-$twitter_url = 'trends/closest.json';
+$twitter_url = '1.1/trends/closest.json';
 $twitter_url .= '?lat=' . $lat ."&long=" . $long;
 
 // Create a Twitter Proxy object from our twitter_proxy.php class

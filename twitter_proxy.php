@@ -14,7 +14,7 @@ class TwitterProxy {
 	 */
 	private $config = [
 		'use_whitelist' => false, // If you want to only allow some requests to use this script.
-		'base_url' => 'https://api.twitter.com/1.1/'
+		'base_url' => 'https://api.twitter.com/'
 	];
 	
 	/**
