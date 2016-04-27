@@ -14,7 +14,7 @@ if(isset($_GET['search'])){
 	$q = $_GET['search'];
 }
 
-$twitter_url = 'search/tweets.json';
+$twitter_url = '1.1/search/tweets.json';
 $twitter_url .= '?q=' . $q;
 $twitter_url .= '&count=' . $count;
 

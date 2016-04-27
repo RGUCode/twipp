@@ -10,9 +10,8 @@ if(isset($_GET['id'])){
 	$id = $_GET['id'];
 }
 
-
-$twitter_url = 'statuses/oembed.json';
-$twitter_url .= '?id=' . $id;
+$twitter_url = '1/statuses/oembed.json';
+$twitter_url .= '?url=https://twitter.com/Interior/status/' . $id;
 
 // Create a Twitter Proxy object from our twitter_proxy.php class
 $twitter_proxy = new TwitterProxy(

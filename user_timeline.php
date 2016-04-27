@@ -15,7 +15,7 @@ if(isset($_GET['name'])){
 	$screen_name = $_GET['name'];
 }
 
-$twitter_url = 'statuses/user_timeline.json';
+$twitter_url = '1.1/statuses/user_timeline.json';
 $twitter_url .= '?screen_name=' . $screen_name;
 $twitter_url .= '&count=' . $count;
 

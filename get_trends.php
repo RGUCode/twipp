@@ -12,7 +12,7 @@ if(isset($_GET['id'])){
 	$woeid = $_GET['id'];
 }
 
-$twitter_url = 'trends/place.json?';
+$twitter_url = '1.1/trends/place.json?';
 $twitter_url .= '?id=' . $woeid;
 
 // Create a Twitter Proxy object from our twitter_proxy.php class
